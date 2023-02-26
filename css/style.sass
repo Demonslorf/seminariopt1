@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital@1&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,600&display=swap')
+
+*
+  margin: 0
+  padding: 0
+
+body
+  background-color: #2b1d1d
+
+header
+
+  nav
+    display: grid
+    grid-template-columns: 700px 50px 90px 50px 100px 100px 100px
+    background-color: #020103
+    ul
+      display: inline-flex
+      li
+        margin-right: 10px
+  form
+    position: relative
+    top: 10px
+    left: 500px
+    display: flex
+    flex-direction: column
+    justify-content: center
+    width: 300px
+    height: 200px
+    border: 4px solid green
+    padding: 10px
+    background-color: #be1414
+    label
+      color: #ffff
+  .form-group
+    margin: 10px
+  button
+    margin: 10px
+  main
+    aside
+      margin: 40px
+      justify-content: space-around
+      h2, h3, h4, h5
+        color: #ffffff
+        font-family: 'Montserrat', sans-serif
+        padding-left: 20px
+        padding-top: 20px
+      p
+        color: #e25d5d
+        font-family: 'Montserrat', sans-serif
+        padding-left: 50px
+        padding-top: 20px
+      ul
+        li
+          color: #e25d5d
+          font-family: 'Montserrat', sans-serif
+          padding-left: 20px
+          padding-top: 20px
+        img
+          width: 500px
+          padding-top: 20px
+          padding-left: 10%
+footer
+  text-align: center
+  margin-top: 10px
+  background-color: #ffff
+
+// Tamaño móvil
+@media only screen and (max-width: 480px) 
+
+  header 
+    nav 
+      grid-template-columns: 1fr 1fr 1fr
+      ul 
+        li 
+          margin-right: 5px
+        
+      
+    
+
+    form 
+      left: 0
+      width: 100%
+      height: auto
+      padding: 5px
+      width: 10px
+    
+  
+
+  main 
+    aside 
+      margin: 20px
+      h2, h3, h4, h5 
+        padding-left: 10px
+        padding-top: 10px
+      
+      p 
+        padding-left: 10px
+        padding-top: 10px
+    
+      ul 
+        li 
+          padding-left: 10px
+          padding-top: 10px
+      
+        img 
+          width: 100% // ajustamos el ancho de la imagen
+          max-width: 200px // establecemos un ancho máximo
+          padding-left: 10% // ajustamos el espacio en blanco alrededor de la imagen
+          display: flex
+          justify-content: center
+          align-items: center
+
+  footer 
+    margin-top: 5px
+
+// Estilos para tablet
+@media only screen and (max-width: 768px) 
+  header 
+    nav 
+      grid-template-columns: 100px 50px 90px
+      justify-content: space-between
+
+      ul 
+        display: none
+
+
+    form 
+      width: 100%
+      left: 0
+    
+
+    main 
+      aside 
+        margin: 20px
+
+        h2, h3, h4, h5 
+          padding-left: 10px
+          padding-top: 10px
+        
+
+        p 
+          padding-left: 30px
+          padding-top: 10px
+        
+
+        ul 
+          li 
+            padding-left: 10px
+            padding-top: 10px
+
+          img 
+            width: 100%
+            padding-left: 0
+   
+
